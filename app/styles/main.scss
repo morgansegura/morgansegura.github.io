@@ -1,0 +1,138 @@
+@import 'utilities';
+@import 'vars';
+@import 'typography';
+
+body {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  color: $font-color--dark;
+  background-color: #fff;
+}
+.serif {
+  font-family: 'Roboto Slab', serif;
+}
+.box {
+  background: #ccc;
+  padding: $no-space;
+}
+.bg-light {
+  background: $background--light;
+}
+/* ================
+ === HEADER SECTION
+=================== */
+
+/* === Logo === */
+
+.header {
+  background: #fff;
+  padding: $fifteenth-space;
+  .logo {
+    text-decoration: none;
+    .text {
+      font-size: 40px;
+      font-weight: 400;
+      text-align: center;
+      display: block;
+      font-family: 'Norican', cursive;
+      color: #333;
+    }
+    i {
+      font-size: 24px;
+      position: relative;
+      left: -5px;
+    }
+  }
+
+  /* === Navigation === */
+
+  .main-nav {
+    display: block;
+    margin: 0 auto;
+    a,
+    a:link,
+    a:visited {
+      background: #ccc;
+      padding: $fifth-space;
+      text-decoration: none;
+    }
+    a:hover {
+
+    }
+    li {
+      display: inline-block;
+      padding: 0 5px;
+    }
+    li:first-child {
+      padding-left: 0;
+    }
+    li:last-child {
+      padding-right: 0;
+    }
+  }
+
+}
+
+
+/* ================
+ ===== CONTENT AREA
+=================== */
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: $full-space 0;
+}
+
+
+/* ================
+ === FOOTER SECTION
+=================== */
+.footer {
+  background: #fff;
+  padding: $fifteenth-space;
+
+  .copyright {
+    padding: $tenth-space 0;
+    .icons {
+
+    }
+    a,
+    a:link,
+    a:visited {
+      text-decoration: none;
+      text-align: center;
+      margin: $fifth-space;
+    }
+    i {
+      position: relative;
+      padding: $fifth-space;
+      width: $half-space;
+      height: $half-space;
+      background: $background--light;
+      vertical-align: middle;
+      line-height: 20px;
+      @include border-radius(50%);
+    }
+  }
+
+  /* === Navigation === */
+
+  .footer-nav {
+    display: block;
+    margin: 0 auto;
+
+    a,
+    a:link,
+    a:visited {
+      text-decoration: none;
+    }
+    a:hover {
+
+    }
+    li {
+      display: inline-block;
+      margin: $fifth-space;
+    }
+  }
+
+}
