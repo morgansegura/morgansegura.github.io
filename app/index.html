@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+      <base href="/">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title ng-bind="pageTitle"></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width">
+
+      <!-- Styles [css] -->
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" >
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Asap|Roboto+Slab|Norican">
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" >
+      <link rel="stylesheet" href="css/main.css">
+      <!-- End [css] -->
+
+      <!-- Header Scripts [js] -->
+      <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+      <!-- End [js] -->
+  </head>
+  <body>
+
+      <header class="header">
+          <!-- Header Container [header container] -->
+          <div class="container row clearfix">
+              <!-- Logo [logo] -->
+              <div class="row middle-xs col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                  <a class="logo" href="/home">
+                      <span class="text">
+                          Segura
+                          <i class="fa fa-pencil-square"></i>
+                      </span>
+                  </a>
+              </div><!-- End [logo] -->
+              <!-- Main Nav [main nav] -->
+              <nav class="main-nav row middle-xs end-xs col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                  <ul>
+                      <li>
+                          <a class="selected" href="/home">Home</a>
+                      </li>
+                      <li>
+                          <a href="/projects">Projects</a>
+                      </li>
+                      <li>
+                          <a href="/blog">Blog</a>
+                      </li>
+                  </ul>
+              </nav><!-- End [main nav] -->
+          </div><!-- End [header container] -->
+      </header>
+
+      <div ui-view></div>
+
+      <footer class="footer">
+          <div class="container row clearfix">
+              <div class="row middle-xs col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div>
+                        &copy; 2016. Segura, Inc. &nbsp;
+                        <span><a class="social twitter" href=""><i class="fa fa-twitter"></i></a></a></span>
+                        <span><a class="social instagram" href=""><i class="fa fa-instagram"></i></a></a></span>
+                        <span><a class="social github" href=""><i class="fa fa-github"></i></a></a></span>
+                    </div>
+              </div>
+              <!-- Footer Nav [main nav] -->
+              <nav class="main-nav row middle-xs end-xs col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                  <ul>
+                      <li>
+                          <a class="selected" ng-class="selected" href="/home">Home</a>
+                      </li>
+                      <li class="col-lg-4">
+                          <a ng-class="selected" href="/projects">Projects</a>
+                      </li>
+                      <li class="col-lg-4">
+                          <a href="/blog">Blog</a>
+                      </li>
+                  </ul>
+              </nav><!-- End [main nav] -->
+          </div>
+      </footer>
+
+      <!-- Scripts [js] -->
+      <script src="js/main.js"></script>
+      <!-- End [js] -->
+
+  </body>
+</html>

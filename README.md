@@ -9,3 +9,14 @@
 ### Blog
 
 ### Design
+
+
+
+
+#### Adding Angular
+
+#### Adding Gulp
+
+#### Adding Browserify
+
+#### Adding SASS
