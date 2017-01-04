@@ -29,7 +29,6 @@ body {
 
 .header {
   background: #fff;
-  padding: 0 20px;
   border-bottom: 1px solid #ddd;
 
   .logo {
@@ -47,7 +46,9 @@ body {
   }
 }
 .main-nav {
-
+  ul {
+    padding: 20px 0;
+  }
   li {display: inline-block;}
   a,
   a:link,
@@ -101,7 +102,7 @@ body {
 
 .footer {
   background: #fff;
-  padding: 20px 0 40px 0;
+  padding: 0 0 40px 0;
   border-top: 1px solid #ddd;
   .social {
 
@@ -111,6 +112,9 @@ body {
       padding: 5px 7px;
 
     }
+  }
+  .social-links {
+    padding: 20px 0;
   }
   .github i {
 
@@ -122,7 +126,7 @@ body {
 }
 .break {
   height: 10px;
-  margin: 30px auto;
+  margin: 40px auto;
   text-align: center;
 }
 .break.dark {
@@ -145,6 +149,12 @@ body {
   width: 10px;
   background: $trans-black;
 }
+
+/* ===========================
+   === POST LAYOUT SECTION ===
+   ===========================*/
+
+/* Post Image Layout titled */
 
 .post-display {
   text-decoration: none;
@@ -187,7 +197,57 @@ body {
 
 }
 
+/* Post Image Layout titled */
+
 
 .responsive {
   width: 100%;
+}
+
+
+
+/* =========================
+   === RESPONSIVE STYLES ===
+   =========================*/
+
+
+/* min-width: 1200px | Desktop */
+
+@media only screen and (max-width:75em){
+
+
+}
+
+/* min-width: 1024px | Tablet Landscape, Laptop, Desktop */
+
+@media only screen and (max-width:64em) {
+
+}
+
+/* min-width: 768px | Tablet Portrait, smart phones */
+
+@media only screen and (max-width:48em){
+
+  /* Main navigation (header & footer) */
+
+  .header .main-nav {
+    margin: 10px 0 0 0;
+  }
+  .main-nav {
+    background: #efefef;
+    display: block;
+    text-align: center;
+    width: 1000%;
+  }
+  .social-links {
+    padding: 20px 0;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  .header .logo {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
 }
