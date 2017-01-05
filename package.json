@@ -69,7 +69,8 @@
     "watchify": "^3.7.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/gulp test"
+    "test": "./node_modules/.bin/gulp test",
+    "start": "node main.js"
   },
   "author": "Morgan Segura",
   "license": "MIT"
