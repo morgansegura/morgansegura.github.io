@@ -70,7 +70,9 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/gulp test",
-    "start": "node main.js"
+    "start": "node main.js",
+    "postinstall": "npm install"
+
   },
   "author": "Morgan Segura",
   "license": "MIT"
