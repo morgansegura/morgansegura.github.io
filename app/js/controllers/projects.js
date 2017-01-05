@@ -1,11 +1,10 @@
-function GalleryCtrl() {
+function ProjectCtrl() {
 
     // ViewModel
     const vm = this;
 
     vm.title = 'AngularJS, Gulp, and Browserify! Written with keyboards and love!';
     vm.number = 1234;
-
     vm.galleries = [
         {
             'title': 'I wonder who had the best day today? Oh happy day.',
@@ -92,6 +91,6 @@ function GalleryCtrl() {
 }
 
 export default {
-    name: 'GalleryCtrl',
-    fn: GalleryCtrl
+    name: 'ProjectCtrl',
+    fn: ProjectCtrl
 };

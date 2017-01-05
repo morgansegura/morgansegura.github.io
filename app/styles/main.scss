@@ -91,7 +91,7 @@ body {
     margin: 0 auto;
   }
   .content {
-    padding: 40px 20px;
+    padding: 0 20px 60px 20px;
   }
 
 
@@ -126,7 +126,7 @@ body {
 }
 .break {
   height: 10px;
-  margin: 40px auto;
+  margin: 60px auto;
   text-align: center;
 }
 .break.dark {
@@ -159,7 +159,10 @@ body {
 .post-display {
   text-decoration: none;
   .img {
-    max-height: 376px;
+
+  }
+  .gimg {
+
   }
   .desc-block {
     width: 100%;

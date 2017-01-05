@@ -1,4 +1,4 @@
-function GalleryCtrl() {
+function BlogCtrl() {
 
     // ViewModel
     const vm = this;
@@ -92,6 +92,6 @@ function GalleryCtrl() {
 }
 
 export default {
-    name: 'GalleryCtrl',
-    fn: GalleryCtrl
+    name: 'BlogCtrl',
+    fn: BlogCtrl
 };

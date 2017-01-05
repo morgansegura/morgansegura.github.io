@@ -9,6 +9,7 @@
       <meta name="viewport" content="width=device-width">
 
       <!-- Styles [css] -->
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.min.css" >
       <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" >
       <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Asap|Roboto+Slab|Norican">
       <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" >
@@ -16,7 +17,7 @@
       <!-- End [css] -->
 
       <!-- Header Scripts [js] -->
-      <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <!-- End [js] -->
   </head>
   <body>
@@ -37,13 +38,16 @@
               <nav class="main-nav col-xs-12 col-sm-6 col-md-6 col-lg-6">
                   <ul>
                       <li>
-                          <a class="selected" href="/home">Home</a>
+                          <a ui-sref-active="selected" ui-sref="home">Home</a>
                       </li>
                       <li>
-                          <a href="/projects">Projects</a>
+                          <a ui-sref-active="selected" ui-sref="projects">Projects</a>
                       </li>
                       <li>
-                          <a href="/blog">Blog</a>
+                          <a ui-sref-active="selected" ui-sref="gallery">Gallery</a>
+                      </li>
+                      <li>
+                          <a ui-sref-active="selected" ui-sref="blog">Blog</a>
                       </li>
                   </ul>
               </nav><!-- End [main nav] -->
@@ -66,13 +70,16 @@
               <nav class="main-nav col-xs-12 col-sm-6 col-md-6 col-lg-6">
                   <ul>
                       <li>
-                          <a class="selected" ng-class="selected" href="/home">Home</a>
+                          <a ui-sref-active="selected" ui-sref="home">Home</a>
                       </li>
-                      <li class="col-lg-4">
-                          <a ng-class="selected" href="/projects">Projects</a>
+                      <li>
+                          <a ui-sref-active="selected" ui-sref="projects">Projects</a>
                       </li>
-                      <li class="col-lg-4">
-                          <a href="/blog">Blog</a>
+                      <li>
+                          <a ui-sref-active="selected" ui-sref="gallery">Gallery</a>
+                      </li>
+                      <li>
+                          <a ui-sref-active="selected" ui-sref="blog">Blog</a>
                       </li>
                   </ul>
               </nav><!-- End [main nav] -->
@@ -80,8 +87,20 @@
       </footer>
 
       <!-- Scripts [js] -->
+      <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/masonry/4.1.1/masonry.pkgd.js"></script>
       <script src="js/main.js"></script>
       <!-- End [js] -->
+        <script>
+            $ = jQuery;
+            $(document).ready(function(){
+                $('.profile-block').masonry({
+                    // options...
+                    itemSelector: '.block-item',
+                });
 
+            });
+
+        </script>
   </body>
 </html>
