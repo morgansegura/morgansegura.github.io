@@ -70,7 +70,8 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/gulp test",
-    "start": "node ./app/js/main.js"
+    "start": "node ./app/js/main.js",
+    "transpile-es2015": "babel src -d lib"
   },
   "author": "Morgan Segura",
   "license": "MIT"
