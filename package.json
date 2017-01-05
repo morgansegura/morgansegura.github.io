@@ -2,6 +2,7 @@
   "name": "morgansegura",
   "version": "1.0.0",
   "description": "Boilerplate using AngularJS, SASS, Gulp, and Browserify while also utilizing best practices.",
+  "main": "./apps/js/main.js",
   "keywords": [
     "express",
     "gulp",
@@ -70,5 +71,6 @@
   "scripts": {
     "test": "./node_modules/.bin/gulp test"
   },
+  "author": "Morgan Segura",
   "license": "MIT"
 }
