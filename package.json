@@ -71,7 +71,6 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/gulp test",
-    "postinstall": "gulp prod",
     "start": "node index.js"
   },
   "author": "Morgan Segura",
