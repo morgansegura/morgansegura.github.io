@@ -71,7 +71,7 @@
   "scripts": {
     "test": "./node_modules/.bin/gulp test",
     "start": "node main.js",
-    "postinstall": "npm install"
+    "postinstall": "./node_modules/bower/bin/bower install"
 
   },
   "author": "Morgan Segura",
