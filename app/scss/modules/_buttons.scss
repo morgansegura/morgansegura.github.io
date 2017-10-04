@@ -25,6 +25,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 *********************/
 
 %btn {
+  /*
   display: inline-block;
   position: relative;
   font-family: $sans-serif;
@@ -39,7 +40,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   border: 0;
   cursor: pointer;
   @include transition(background-color 0.14s ease-in-out);
-
+*/
   // hovering on the btn
   &:hover, &:focus {
     color: $white;
