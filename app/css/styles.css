@@ -875,27 +875,21 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.blue-btn, .comment-reply-link, #submit {
+.blue-btn, .comment-reply-link, #submit, .dark-btn, .default-btn {
   display: inline-block;
   position: relative;
   font-family: "Asap", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
-  color: #fff;
-  font-size: 0.9em;
-  font-size: 34px;
-  line-height: 34px;
   font-weight: normal;
-  padding: 0 24px;
-  border-radius: 5em;
   border: 0;
   cursor: pointer;
+  margin-top: 10px;
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out; }
-  .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
-    color: #fff;
+  .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .dark-btn:hover, .default-btn:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus, .dark-btn:focus, .default-btn:focus {
     text-decoration: none;
     outline: none; }
-  .blue-btn:active, .comment-reply-link:active, #submit:active {
+  .blue-btn:active, .comment-reply-link:active, #submit:active, .dark-btn:active, .default-btn:active {
     top: 1px; }
 
 /*
@@ -909,6 +903,20 @@ and it will create a button dependant on those variables.
     background-color: #2574a8; }
   .blue-btn:active, .comment-reply-link:active, #submit:active {
     background-color: #2472a4; }
+
+.dark-btn {
+  background-color: #5c6b80;
+  color: #fff; }
+  .dark-btn:hover, .dark-btn:focus {
+    background-color: #536174; }
+  .dark-btn:active {
+    background-color: #515f71; }
+
+.default-btn {
+  background-color: #f01d4f;
+  color: #fff; }
+  .default-btn:hover, .default-btn:focus, .default-btn:active {
+    background-color: #d10e3c; }
 
 /******************************************************************
 Site Name:
@@ -1297,23 +1305,36 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
     text-decoration: none; }
 
+.massive-headline {
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 0; }
+
 /*********************
 HEADER STYLES
 *********************/
 .header {
   background-color: #323944; }
 
-#logo {
-  margin: 0.75em 0; }
-  #logo a {
-    color: #fff; }
+.logo {
+  display: block;
+  text-align: center;
+  font-family: "Norican", cursive;
+  font-size: 2rem; }
+  .logo:hover, .logo:focus {
+    text-decoration: none; }
+  .logo i {
+    margin-left: -8px;
+    font-size: 2.5rem; }
 
 /*********************
 NAVIGATION STYLES
 *********************/
 .nav {
   border-bottom: 0;
-  margin: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
@@ -1327,7 +1348,6 @@ NAVIGATION STYLES
 		*/ }
     .nav li a {
       display: block;
-      color: #fff;
       text-decoration: none;
       padding: 0.75em;
       /*
@@ -1341,9 +1361,6 @@ NAVIGATION STYLES
       padding-left: 30px; }
 
 /* end .nav */
-.logo .text {
-  font-size: 80px; }
-
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -1472,6 +1489,15 @@ POSTS & CONTENT STYLES
 /* gallery caption styles */
 .tags {
   margin: 0; }
+
+.full-image {
+  display: block; }
+
+.index {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("https://static.pexels.com/photos/209151/pexels-photo-209151.jpeg") 0 0 no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8); }
 
 /******************************************************************
 PAGE NAVI STYLES
