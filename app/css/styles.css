@@ -873,7 +873,7 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.blue-btn, .dark-btn, .default-btn, .purple-btn, .charcoal-btn, .white-btn {
+.blue-btn, .dark-btn, .default-btn, .purple-btn, .bahama-btn, .charcoal-btn, .white-btn {
   display: inline-block;
   position: relative;
   font-family: "Asap", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -884,10 +884,10 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   margin-top: 10px;
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out; }
-  .blue-btn:hover, .dark-btn:hover, .default-btn:hover, .purple-btn:hover, .charcoal-btn:hover, .white-btn:hover, .blue-btn:focus, .dark-btn:focus, .default-btn:focus, .purple-btn:focus, .charcoal-btn:focus, .white-btn:focus {
+  .blue-btn:hover, .dark-btn:hover, .default-btn:hover, .purple-btn:hover, .bahama-btn:hover, .charcoal-btn:hover, .white-btn:hover, .blue-btn:focus, .dark-btn:focus, .default-btn:focus, .purple-btn:focus, .bahama-btn:focus, .charcoal-btn:focus, .white-btn:focus {
     text-decoration: none;
     outline: none; }
-  .blue-btn:active, .dark-btn:active, .default-btn:active, .purple-btn:active, .charcoal-btn:active, .white-btn:active {
+  .blue-btn:active, .dark-btn:active, .default-btn:active, .purple-btn:active, .bahama-btn:active, .charcoal-btn:active, .white-btn:active {
     top: 1px; }
 
 /*
@@ -896,7 +896,8 @@ You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
 .blue-btn {
-  background-color: #2980b9; }
+  background-color: #2980b9;
+  color: #fff; }
   .blue-btn:hover, .blue-btn:focus {
     background-color: #2574a8; }
   .blue-btn:active {
@@ -921,6 +922,12 @@ and it will create a button dependant on those variables.
   color: #fff; }
   .purple-btn:hover, .purple-btn:focus, .purple-btn:active {
     background-color: #634881; }
+
+.bahama-btn {
+  background-color: #03bb91;
+  color: #fff; }
+  .bahama-btn:hover, .bahama-btn:focus, .bahama-btn:active {
+    background-color: #028e6e; }
 
 .charcoal-btn {
   background-color: #34383c;
@@ -1296,7 +1303,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 .icon-headline {
   font-size: 4rem;
   text-align: center;
-  color: #5c6b80; }
+  color: #f01d4f; }
   .icon-headline h4 {
     font-size: 1.5rem;
     font-family: "Oleo Script", sans-serif;
@@ -1350,7 +1357,7 @@ SECTIONS & CONTENT STYLES
   background-size: cover; }
 
 .grayed {
-  border: solid #ccc;
+  border: solid #eaedf2;
   border-width: 1px 0;
   background: linear-gradient(to top right, #fff, #eaedf2);
   padding: 2rem 0; }
