@@ -27,7 +27,7 @@ the whole project.
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-@import url("https://fonts.googleapis.com/css?family=Asap|Norican|Oleo+Script");
+@import url("https://fonts.googleapis.com/css?family=Asap|Norican|Passion+One");
 article,
 aside,
 details,
@@ -1295,19 +1295,21 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-size: 3rem;
   line-height: 0; }
 
+.section-headline,
+.icon-headline h4 {
+  font-family: "Asap", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700; }
+
 .section-headline {
-  font-size: 2rem;
-  font-family: "Oleo Script", sans-serif;
-  font-weight: 400; }
+  font-size: 1.8rem;
+  color: #34383c; }
 
 .icon-headline {
   font-size: 4rem;
   text-align: center;
   color: #f01d4f; }
   .icon-headline h4 {
-    font-size: 1.5rem;
-    font-family: "Oleo Script", sans-serif;
-    font-weight: 400; }
+    font-size: 1.5rem; }
 
 /*********************
 HEADER STYLES
@@ -1353,13 +1355,16 @@ SECTIONS & CONTENT STYLES
 .index {
   color: #fff;
   padding: 6rem 0;
+  height: 100%;
   background: linear-gradient(to top right, #f01d4f, rgba(121, 88, 159, 0)), url("//avante.biz/wp-content/uploads/Technology-Backgrounds/Technology-Backgrounds-032.jpg") 0 0 no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover; }
 
 .grayed {
-  border: solid #eaedf2;
+  border: solid #ebede3;
   border-width: 1px 0;
-  background: linear-gradient(to top right, #fff, #eaedf2);
+  background: linear-gradient(to top right, #fff, #eceee5);
   padding: 2rem 0; }
 
 /*********************
@@ -1380,7 +1385,15 @@ i.show-down {
   background: #fff;
   color: rgba(0, 0, 0, 0.1); }
 
-.img-thumbnail {
+.thumb-gap .img-thumbnail {
+  border-radius: 100px;
+  padding: 1rem;
+  background: #eceee5;
+  border-color: #eaedf2;
+  border-width: 0; }
+
+.img-thumbnail,
+.img-fluid {
   margin-bottom: 2rem; }
 
 /*********************
