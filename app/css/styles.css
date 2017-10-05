@@ -875,7 +875,7 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.blue-btn, .comment-reply-link, #submit, .dark-btn, .default-btn {
+.blue-btn, .comment-reply-link, #submit, .dark-btn, .default-btn, .purple-btn, .charcoal-btn, .white-btn {
   display: inline-block;
   position: relative;
   font-family: "Asap", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -886,10 +886,10 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   margin-top: 10px;
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out; }
-  .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .dark-btn:hover, .default-btn:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus, .dark-btn:focus, .default-btn:focus {
+  .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .dark-btn:hover, .default-btn:hover, .purple-btn:hover, .charcoal-btn:hover, .white-btn:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus, .dark-btn:focus, .default-btn:focus, .purple-btn:focus, .charcoal-btn:focus, .white-btn:focus {
     text-decoration: none;
     outline: none; }
-  .blue-btn:active, .comment-reply-link:active, #submit:active, .dark-btn:active, .default-btn:active {
+  .blue-btn:active, .comment-reply-link:active, #submit:active, .dark-btn:active, .default-btn:active, .purple-btn:active, .charcoal-btn:active, .white-btn:active {
     top: 1px; }
 
 /*
@@ -917,6 +917,25 @@ and it will create a button dependant on those variables.
   color: #fff; }
   .default-btn:hover, .default-btn:focus, .default-btn:active {
     background-color: #d10e3c; }
+
+.purple-btn {
+  background-color: #79589F;
+  color: #fff; }
+  .purple-btn:hover, .purple-btn:focus, .purple-btn:active {
+    background-color: #634881; }
+
+.charcoal-btn {
+  background-color: #34383c;
+  color: #fff; }
+  .charcoal-btn:hover, .charcoal-btn:focus, .charcoal-btn:active {
+    background-color: #1f2123; }
+
+.white-btn {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #34383c;
+  font-weight: 700; }
+  .white-btn:hover, .white-btn:focus, .white-btn:active {
+    background-color: rgba(255, 255, 255, 0.9); }
 
 /******************************************************************
 Site Name:
@@ -1228,7 +1247,7 @@ body {
   font-size: 100%;
   line-height: 1.5;
   color: #5c6b80;
-  background-color: #eaedf2;
+  background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -1310,22 +1329,31 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-size: 3rem;
   line-height: 0; }
 
+.icon-headline {
+  font-size: 4rem;
+  text-align: center;
+  color: #2f387f; }
+  .icon-headline h4 {
+    font-size: 1.5rem;
+    font-family: "Roboto Slab", "Georgia", Cambria, Times New Roman, Times, serif;
+    font-weight: 700; }
+
 /*********************
 HEADER STYLES
 *********************/
-.header {
-  background-color: #323944; }
-
 .logo {
   display: block;
   text-align: center;
   font-family: "Norican", cursive;
-  font-size: 2rem; }
+  font-size: 1.5rem; }
   .logo:hover, .logo:focus {
     text-decoration: none; }
+  .logo h1 {
+    margin: 0;
+    padding: 1rem; }
   .logo i {
-    margin-left: -8px;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    margin-left: 3px; }
 
 /*********************
 NAVIGATION STYLES
@@ -1491,13 +1519,16 @@ POSTS & CONTENT STYLES
   margin: 0; }
 
 .full-image {
-  display: block; }
+  display: block;
+  padding: 6rem 0;
+  border: solid #eaedf2;
+  border-width: 0;
+  margin-bottom: 2rem; }
 
 .index {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("https://static.pexels.com/photos/209151/pexels-photo-209151.jpeg") 0 0 no-repeat;
-  background-size: cover;
   color: #fff;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8); }
+  background: linear-gradient(to top right, #f01d4f, rgba(121, 88, 159, 0)), url("//avante.biz/wp-content/uploads/Technology-Backgrounds/Technology-Backgrounds-032.jpg") 0 0 no-repeat;
+  background-size: cover; }
 
 /******************************************************************
 PAGE NAVI STYLES

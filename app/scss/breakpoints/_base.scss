@@ -15,7 +15,7 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 	color: $text-color;
-	background-color: $gray;
+	background-color: $white;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
 }
@@ -130,30 +130,50 @@ h5, .h5 {
 
 }
 .massive-headline {
-  font-weight: 800;
-  font-size: 3rem;
-  line-height: 0;
+  	font-weight: 800;
+  	font-size: 3rem;
+  	line-height: 0;
+
+}
+.icon-headline {
+	font-size: 4rem;
+	text-align: center;
+	color: $violet;
+	h4 {
+		font-size: 1.5rem;
+		font-family: $serif;
+		font-weight: 700;
+	}
+	i {}
 }
 
 /*********************
 HEADER STYLES
 *********************/
+header {
+
+}
 
 .header {
-	background-color: $black;
+	// background: linear-gradient($bones-pink, darken($bones-pink, 8%));
 }
 
 .logo {
     display: block;
     text-align: center;
     font-family: $cursive;
-    font-size: 2rem;
+    font-size: 1.5rem;
+	//color: $white;
   &:hover, &:focus {
     text-decoration: none;
   }
+	h1 {
+		margin: 0;
+		padding: 1rem;
+	}
   i {
-    margin-left: -8px;
     font-size: 2.5rem;
+	margin-left: 3px;
   }
 }
 
@@ -475,19 +495,23 @@ POSTS & CONTENT STYLES
 	}
 
 .full-image {
-  display: block;
+	display: block;
+	padding: 6rem 0;
+	border: solid $gray;
+	border-width: 0;
+	margin-bottom: 2rem;
 }
 .index {
+  color: $white;
   background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.8)
+  linear-gradient(
+	  to top right,
+	  rgba(240,29,79,1),
+	  rgba(121,88,159,0)
   ),
-  url('https://static.pexels.com/photos/209151/pexels-photo-209151.jpeg') 0 0 no-repeat;
-  background-size: cover;
-  color: #fff;
-  text-shadow: 2px 2px 2px rgba(0,0,0,.8);
+	url('//avante.biz/wp-content/uploads/Technology-Backgrounds/Technology-Backgrounds-032.jpg') 0 0 no-repeat;
+	//url('https://avante.biz/wp-content/uploads/Technology-Backgrounds/Technology-Backgrounds-003.jpg') 0 0 no-repeat;
+	background-size: cover;
 }
 /******************************************************************
 PAGE NAVI STYLES

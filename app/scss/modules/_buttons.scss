@@ -93,3 +93,40 @@ and it will create a button dependant on those variables.
   } // end hover
 
 } // end blue button
+
+.purple-btn {
+  @extend %btn; // here we load the btn defaults
+  background-color: $purple;
+  color: $white;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($purple, 9%);
+  } // end hover
+
+} // end blue button
+
+.charcoal-btn {
+  @extend %btn; // here we load the btn defaults
+  background-color: $charcoal;
+  color: $white;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($charcoal, 9%);
+  } // end hover
+
+} // end blue button
+
+.white-btn {
+  @extend %btn; // here we load the btn defaults
+  background-color: white(.6);
+  color: $charcoal;
+  font-weight: 700;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: white(.9);
+  } // end hover
+
+} // end blue button
