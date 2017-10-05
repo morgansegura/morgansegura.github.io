@@ -27,9 +27,7 @@ the whole project.
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-@import url("https://fonts.googleapis.com/css?family=Asap");
-@import url("https://fonts.googleapis.com/css?family=Asap|Norican|Roboto+Slab");
-@import url("https://fonts.googleapis.com/css?family=Asap|Norican");
+@import url("https://fonts.googleapis.com/css?family=Asap|Norican|Oleo+Script");
 article,
 aside,
 details,
@@ -424,12 +422,12 @@ table {
   white-space: nowrap;
   overflow: hidden; }
 
-.clearfix, .cf, .comment-respond {
+.clearfix, .cf {
   zoom: 1; }
-  .clearfix:before, .clearfix:after, .cf:before, .comment-respond:before, .cf:after, .comment-respond:after {
+  .clearfix:before, .clearfix:after, .cf:before, .cf:after {
     content: "";
     display: table; }
-  .clearfix:after, .cf:after, .comment-respond:after {
+  .clearfix:after, .cf:after {
     clear: both; }
 
 /*
@@ -875,7 +873,7 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.blue-btn, .comment-reply-link, #submit, .dark-btn, .default-btn, .purple-btn, .charcoal-btn, .white-btn {
+.blue-btn, .dark-btn, .default-btn, .purple-btn, .charcoal-btn, .white-btn {
   display: inline-block;
   position: relative;
   font-family: "Asap", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -886,10 +884,10 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   margin-top: 10px;
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out; }
-  .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .dark-btn:hover, .default-btn:hover, .purple-btn:hover, .charcoal-btn:hover, .white-btn:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus, .dark-btn:focus, .default-btn:focus, .purple-btn:focus, .charcoal-btn:focus, .white-btn:focus {
+  .blue-btn:hover, .dark-btn:hover, .default-btn:hover, .purple-btn:hover, .charcoal-btn:hover, .white-btn:hover, .blue-btn:focus, .dark-btn:focus, .default-btn:focus, .purple-btn:focus, .charcoal-btn:focus, .white-btn:focus {
     text-decoration: none;
     outline: none; }
-  .blue-btn:active, .comment-reply-link:active, #submit:active, .dark-btn:active, .default-btn:active, .purple-btn:active, .charcoal-btn:active, .white-btn:active {
+  .blue-btn:active, .dark-btn:active, .default-btn:active, .purple-btn:active, .charcoal-btn:active, .white-btn:active {
     top: 1px; }
 
 /*
@@ -897,11 +895,11 @@ An example button.
 You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
-.blue-btn, .comment-reply-link, #submit {
+.blue-btn {
   background-color: #2980b9; }
-  .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
+  .blue-btn:hover, .blue-btn:focus {
     background-color: #2574a8; }
-  .blue-btn:active, .comment-reply-link:active, #submit:active {
+  .blue-btn:active {
     background-color: #2472a4; }
 
 .dark-btn {
@@ -1251,45 +1249,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/********************
-WORDPRESS BODY CLASSES
-style a page via class
-********************/
-/* for sites that are read right to left (i.e. hebrew) */
-/* home page */
-/* blog template page */
-/* archive page */
-/* date archive page */
-/* replace the number to the corresponding page number */
-/* search page */
-/* search result page */
-/* no results search page */
-/* individual paged search (i.e. body.search-paged-3) */
-/* 404 page */
-/* single post page */
-/* individual post page by id (i.e. body.postid-73) */
-/* individual paged single (i.e. body.single-paged-3) */
-/* attatchment page */
-/* individual attatchment page (i.e. body.attachmentid-763) */
-/* style mime type pages */
-/* author page */
-/* user nicename (i.e. body.author-samueladams) */
-/* paged author archives (i.e. body.author-paged-4) for page 4 */
-/* category page */
-/* individual category page (i.e. body.category-6) */
-/* replace the number to the corresponding page number */
-/* tag page */
-/* individual tag page (i.e. body.tag-news) */
-/* replace the number to the corresponding page number */
-/* custom page template page */
-/* individual page template (i.e. body.page-template-contact-php */
-/* replace the number to the corresponding page number */
-/* parent page template */
-/* child page template */
-/* replace the number to the corresponding page number */
-/* if user is logged in */
-/* paged items like search results or archives */
-/* individual paged (i.e. body.paged-3) */
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -1329,14 +1288,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-size: 3rem;
   line-height: 0; }
 
+.section-headline {
+  font-size: 2rem;
+  font-family: "Oleo Script", sans-serif;
+  font-weight: 400; }
+
 .icon-headline {
   font-size: 4rem;
   text-align: center;
-  color: #2f387f; }
+  color: #5c6b80; }
   .icon-headline h4 {
     font-size: 1.5rem;
-    font-family: "Roboto Slab", "Georgia", Cambria, Times New Roman, Times, serif;
-    font-weight: 700; }
+    font-family: "Oleo Script", sans-serif;
+    font-weight: 400; }
 
 /*********************
 HEADER STYLES
@@ -1362,388 +1326,66 @@ NAVIGATION STYLES
   border-bottom: 0;
   margin: 0 auto;
   text-align: center;
-  display: block;
-  /* end .menu li */
-  /* highlight current page */
-  /* end current highlighters */ }
-  .nav li {
-    /*
-		so you really have to rethink your dropdowns for mobile.
-		you don't want to have it expand too much because the
-		screen is so small. How you manage your menu should
-		depend on the project. Here's some great info on it:
-		http://www.alistapart.com/articles/organizing-mobile/
-		*/ }
-    .nav li a {
-      display: block;
-      text-decoration: none;
-      padding: 0.75em;
-      /*
-			remember this is for mobile ONLY, so there's no need
-			to even declare hover styles here, you can do it in
-			the style.scss file where it's relevant. We want to
-			keep this file as small as possible!
-			*/ }
-    .nav li ul.sub-menu li a,
-    .nav li ul.children li a {
-      padding-left: 30px; }
+  display: block; }
+  .nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.75em; }
+  .nav li ul.sub-menu li a,
+  .nav li ul.children li a {
+    padding-left: 30px; }
 
-/* end .nav */
-/*********************
-POSTS & CONTENT STYLES
-*********************/
-#content {
-  margin-top: 1.5em; }
-
-.hentry {
-  background-color: #fff;
-  border-radius: 3px;
-  margin-bottom: 1.5em;
-  border: 1px solid #ccc; }
-  .hentry header {
-    border-bottom: 1px solid #f8f9fa;
-    padding: 1.5em; }
-  .hentry footer {
-    padding: 1.5em;
-    border-top: 1px solid #f8f9fa; }
-    .hentry footer p {
-      margin: 0; }
-
-/* end .hentry */
-.single-title,
-.page-title,
-.entry-title {
-  margin: 0; }
-
-/* want to style individual post classes? Booya! */
-/* post by id (i.e. post-3) */
-/* general post style */
-/* general article on a page style */
-/* general style on an attatchment */
-/* sticky post style */
-/* hentry class */
-/* style by category (i.e. category-videos) */
-/* style by tag (i.e. tag-news) */
-/* post meta */
-.byline {
-  color: #9fa6b4;
-  font-style: italic;
-  margin: 0; }
-
-/* entry content */
-.entry-content {
-  padding: 1.5em 1.5em 0;
-  /*
-			image alignment on a screen this size may be
-			a bit difficult. It's set to start aligning
-			and floating images at the next breakpoint,
-			but it's up to you. Feel free to change it up.
-			*/ }
-  .entry-content p {
-    margin: 0 0 1.5em; }
-  .entry-content table {
-    width: 100%;
-    border: 1px solid #eaedf2;
-    margin-bottom: 1.5em; }
-    .entry-content table caption {
-      margin: 0 0 7px;
-      font-size: 0.75em;
-      color: #9fa6b4;
-      text-transform: uppercase;
-      letter-spacing: 1px; }
-  .entry-content tr {
-    border-bottom: 1px solid #eaedf2; }
-    .entry-content tr:nth-child(even) {
-      background-color: #f8f9fa; }
-  .entry-content td {
-    padding: 7px;
-    border-right: 1px solid #eaedf2; }
-    .entry-content td:last-child {
-      border-right: 0; }
-  .entry-content th {
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #eaedf2;
-    border-right: 1px solid #eaedf2; }
-    .entry-content th:last-child {
-      border-right: 0; }
-  .entry-content blockquote {
-    margin: 0 0 1.5em 0.75em;
-    padding: 0 0 0 0.75em;
-    border-left: 3px solid #2980b9;
-    font-style: italic;
-    color: #9fa6b4; }
-  .entry-content dd {
-    margin-left: 0;
-    font-size: 0.9em;
-    color: #787878;
-    margin-bottom: 1.5em; }
-  .entry-content img {
-    margin: 0 0 1.5em 0;
-    max-width: 100%;
-    height: auto; }
-  .entry-content .size-auto,
-  .entry-content .size-full,
-  .entry-content .size-large,
-  .entry-content .size-medium,
-  .entry-content .size-thumbnail {
-    max-width: 100%;
-    height: auto; }
-  .entry-content pre {
-    background: #323944;
-    color: #f8f9fa;
-    font-size: 0.9em;
-    padding: 1.5em;
-    margin: 0 0 1.5em;
-    border-radius: 3px; }
-
-/* end .entry-content */
-.wp-caption {
-  max-width: 100%;
-  background: #eee;
-  padding: 5px;
-  /* images inside wp-caption */ }
-  .wp-caption img {
-    max-width: 100%;
-    margin-bottom: 0;
-    width: 100%; }
-  .wp-caption p.wp-caption-text {
-    font-size: 0.85em;
-    margin: 4px 0 7px;
-    text-align: center; }
-
-/* end .wp-caption */
-/* image gallery styles */
-/* end .gallery */
-/* gallery caption styles */
-.tags {
-  margin: 0; }
-
+/*************************
+SECTIONS & CONTENT STYLES
+*************************/
 .full-image {
   display: block;
-  padding: 6rem 0;
   border: solid #eaedf2;
-  border-width: 0;
-  margin-bottom: 2rem; }
+  border-width: 0; }
 
 .index {
   color: #fff;
+  padding: 6rem 0;
   background: linear-gradient(to top right, #f01d4f, rgba(121, 88, 159, 0)), url("//avante.biz/wp-content/uploads/Technology-Backgrounds/Technology-Backgrounds-032.jpg") 0 0 no-repeat;
   background-size: cover; }
 
-/******************************************************************
-PAGE NAVI STYLES
-******************************************************************/
-.pagination,
-.wp-prev-next {
-  margin: 1.5em 0; }
-
-.pagination {
-  text-align: center; }
-  .pagination ul {
-    display: inline-block;
-    background-color: #fff;
-    white-space: nowrap;
-    padding: 0;
-    clear: both;
-    border-radius: 3px; }
-  .pagination li {
-    padding: 0;
-    margin: 0;
-    float: left;
-    display: inline;
-    overflow: hidden;
-    border-right: 1px solid #eaedf2; }
-  .pagination a, .pagination span {
-    margin: 0;
-    text-decoration: none;
-    padding: 0;
-    line-height: 1em;
-    font-size: 1em;
-    font-weight: normal;
-    padding: 0.75em;
-    min-width: 1em;
-    display: block;
-    color: #2980b9; }
-    .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
-      background-color: #2980b9;
-      color: #fff; }
-  .pagination .current {
-    cursor: default;
-    color: #5c6b80; }
-    .pagination .current:hover, .pagination .current:focus {
-      background-color: #fff;
-      color: #5c6b80; }
-
-/* end .bones_page_navi */
-/* fallback previous & next links */
-.wp-prev-next .prev-link {
-  float: left; }
-
-.wp-prev-next .next-link {
-  float: right; }
-
-/* end .wp-prev-next */
-/******************************************************************
-COMMENT STYLES
-******************************************************************/
-/* h3 comment title */
-#comments-title {
-  padding: 0.75em;
-  margin: 0;
-  border-top: 1px solid #f8f9fa;
-  /* number of comments span */ }
-
-.commentlist {
-  margin: 0;
-  list-style-type: none; }
-
-.comment {
-  position: relative;
-  clear: both;
-  overflow: hidden;
-  padding: 1.5em;
-  border-bottom: 1px solid #f8f9fa;
-  /* vcard */
-  /* end .commentlist .vcard */
-  /* end children */
-  /* general comment classes */ }
-  .comment .comment-author {
-    padding: 7px;
-    border: 0; }
-  .comment .vcard {
-    margin-left: 50px; }
-    .comment .vcard cite.fn {
-      font-weight: 700;
-      font-style: normal; }
-    .comment .vcard time {
-      display: block;
-      font-size: 0.9em;
-      font-style: italic; }
-      .comment .vcard time a {
-        color: #9fa6b4;
-        text-decoration: none; }
-        .comment .vcard time a:hover {
-          text-decoration: underline; }
-    .comment .vcard .avatar {
-      position: absolute;
-      left: 16px;
-      border-radius: 50%; }
-  .comment:last-child {
-    margin-bottom: 0; }
-  .comment .children {
-    margin: 0;
-    /* variations */
-    /* change number for different depth */ }
-  .comment[class*=depth-] {
-    margin-top: 1.1em; }
-  .comment.depth-1 {
-    margin-left: 0;
-    margin-top: 0; }
-  .comment:not(.depth-1) {
-    margin-top: 0;
-    margin-left: 7px;
-    padding: 7px; }
-  .comment.odd {
-    background-color: #fff; }
-  .comment.even {
-    background: #f8f9fa; }
-
-/* comment meta */
-/* comment content */
-.comment_content p {
-  margin: 0.7335em 0 1.5em;
-  font-size: 1em;
-  line-height: 1.5em; }
-
-/* end .commentlist .comment_content */
-/* comment reply link */
-.comment-reply-link {
-  font-size: 0.9em;
-  float: right; }
-
-/* end .commentlist .comment-reply-link */
-/* edit comment link */
-.comment-edit-link {
-  font-style: italic;
-  margin: 0 7px;
-  text-decoration: none;
-  font-size: 0.9em; }
-
-/******************************************************************
-COMMENT FORM STYLES
-******************************************************************/
-.comment-respond {
-  padding: 1.5em;
-  border-top: 1px solid #f8f9fa; }
-
-#reply-title {
-  margin: 0; }
-
-.logged-in-as {
-  color: #9fa6b4;
-  font-style: italic;
-  margin: 0; }
-  .logged-in-as a {
-    color: #5c6b80; }
-
-.comment-form-comment {
-  margin: 1.5em 0 0.75em; }
-
-.form-allowed-tags {
-  padding: 1.5em;
-  background-color: #f8f9fa;
-  font-size: 0.9em; }
-
-/* comment submit button */
-#submit {
-  float: right;
-  font-size: 1em; }
-
-/* comment form title */
-#comment-form-title {
-  margin: 0 0 1.1em; }
-
-/* cancel comment reply link */
-/* logged in comments */
-/* allowed tags */
-#allowed_tags {
-  margin: 1.5em 10px 0.7335em 0; }
-
-/* no comments */
-.nocomments {
-  margin: 0 20px 1.1em; }
+.grayed {
+  border: solid #ccc;
+  border-width: 1px 0;
+  background: linear-gradient(to top right, #fff, #eaedf2);
+  padding: 2rem 0; }
 
 /*********************
-SIDEBARS & ASIDES
+IMAGE & ICON STYLES
 *********************/
-.widget ul li {
-  /* deep nesting */ }
-
-.no-widgets {
-  background-color: #fff;
-  padding: 1.5em;
+i.scroll-down-white {
+  display: inline-block;
   text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  margin-bottom: 1.5em; }
+  font-size: 6em;
+  background: #f01d4f;
+  background-width: 50px;
+  color: #fff; }
+
+i.show-down {
+  position: relative;
+  top: -36px;
+  font-size: 2.5em;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.1); }
+
+.img-thumbnail {
+  margin-bottom: 2rem; }
 
 /*********************
 FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  background-color: #323944;
-  color: #f8f9fa; }
+  background-color: #34383c;
+  padding: 4rem;
+  color: #f8f9fa;
+  margin: 0; }
 
-/*
-	if you checked out the link above:
-	http://www.alistapart.com/articles/organizing-mobile/
-	you'll want to style the footer nav
-	a bit more in-depth. Remember to keep
-	it simple because you'll have to
-	override these styles for the desktop
-	view.
-	*/
 /* end .footer-links */
 /*********************
 LARGER MOBILE DEVICES

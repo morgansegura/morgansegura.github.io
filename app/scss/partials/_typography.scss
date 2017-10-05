@@ -47,13 +47,12 @@ https://github.com/devinhunt/typebase.css
 I've edited it a bit, but it's a nice starting point.
 */
 
-@import url('https://fonts.googleapis.com/css?family=Asap');
-@import url('https://fonts.googleapis.com/css?family=Asap|Norican|Roboto+Slab');
-@import url('https://fonts.googleapis.com/css?family=Asap|Norican');
+@import url('https://fonts.googleapis.com/css?family=Asap|Norican|Oleo+Script');
 
 // font stacks
 $sans-serif:        "Asap","Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif:             "Roboto Slab","Georgia", Cambria, Times New Roman, Times, serif;
+$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+$headline:          "Oleo Script", sans-serif;
 $cursive:           "Norican", cursive;
 
 /*
