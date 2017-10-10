@@ -1,8 +1,6 @@
 @import '_variables';
 /* --------------------------------
-
 Primary style
-
 -------------------------------- */
 body.overflow-hidden {
   /* used when modal is visible */
@@ -10,19 +8,20 @@ body.overflow-hidden {
 }
 
 /* --------------------------------
-
 Main Components
-
 -------------------------------- */
 .cd-section {
   padding: 2em 5%;
   text-align: center;
-  background-color: $bahama;
+  height: 100%;
+  background: linear-gradient(to top right, rgba(240,29,79,1), rgba(121,88,159,0)),
+              url('//avante.biz/wp-content/uploads/Technology-Backgrounds/Technology-Backgrounds-032.jpg') 0 0 no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 
   p {
-    margin: 2em 0;
-    line-height: 1.6;
-    color: #ffffff;
+    color: $white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -33,7 +32,7 @@ Main Components
     padding: 4em 10%;
   }
   .cd-section p {
-    font-size: 1.8rem;
+
     line-height: 2;
   }
 }
@@ -114,18 +113,15 @@ Main Components
 .cd-modal-action {
   position: relative;
 }
-.cd-modal-action .btn, .cd-modal-action .cd-modal-bg {
-  display: inline-block;
+
+.cd-modal-action .cd-modal-bg {
   height: 4em;
   background-color: $charcoal;
 }
 .cd-modal-action .btn {
   width: 12.5em;
-  border-radius: 5em;
   color: #ffffff;
-  line-height: 3em;
   white-space: nowrap;
-  font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transition: color 0.2s 0.3s, width 0.3s 0s;
